@@ -1,0 +1,10 @@
+Home
+Services
+Portfolio
+About
+Contact
+
+- Start witj mobile first 
+- Mobile responsive design @ media wuiries 
+- Add menu
+- Add Light/Dark mode
