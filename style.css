@@ -12,6 +12,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth; /* move into html section? */
 }
 
 a {
@@ -19,13 +20,18 @@ a {
 }
 
 .container {
-  /* padding: 10px 10%; */
   min-height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+/* img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+} */
 
 .brand h1 {
   font-size: 2.5rem;
@@ -55,11 +61,13 @@ a {
 #header .nav-bar {
   display: flex;
   align-items: center;
+  /*<< is putting space at top of page */
   justify-content: space-between;
   width: 100%;
   height: 100%;
   max-width: 1300px;
   padding: 0 10px;
+  /* border: 5px solid white; */
 }
 
 #header .nav-list ul {
@@ -106,6 +114,47 @@ a {
   letter-spacing: initial;
 }
 
+#header .hamburger {
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  cursor: pointer; /* not working */
+}
+
+#header .hamburger .bar {
+  height: 2px;
+  width: 30px;
+  position: relative;
+  background-color: white;
+  z-index: -1;
+}
+#header .hamburger .bar::after,
+#header .hamburger .bar::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background-color: white;
+  transition: 0.3s ease;
+  transition-property: top, bottom;
+}
+
+#header .hamburger .bar::after {
+  top: 8px;
+}
+
+#header .hamburger .bar::before {
+  bottom: 8px;
+}
+
 /* End Header */
 
 /* hero Section  */
@@ -115,7 +164,6 @@ a {
   background-position: top center;
   position: relative;
   z-index: 1;
-  border: 5px solid white;
 }
 
 #hero::after {
@@ -544,3 +592,21 @@ form .btn2 {
     flex-basis: 60%;
   }
 } */
+
+/* CSS for Desktop  */
+
+@media (min-width: 1200px) {
+  #hero {
+    background-image: url(Images/Ewan-white-background-mobile.png);
+    /* background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1; */
+    border: 5px solid white;
+  }
+
+  #header .nav-list ul {
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+  }
+}
