@@ -255,7 +255,7 @@ a {
   animation-delay: 2.5s;
 }
 
-#hero .cta {
+.cta {
   display: inline-block;
   padding: 10px 30px;
   color: white;
@@ -270,9 +270,29 @@ a {
   transition-property: background-color, color;
 }
 
-#hero .cta:hover {
+.cta:hover {
   color: white;
   background-color: var(--theme-colour);
+}
+
+.resumeButton {
+  display: inline-block;
+  padding: 10px 30px;
+  color: white;
+  background-color: var(--theme-colour);
+  border: 2px solid var(--theme-colour);
+  border-radius: 5px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 30px;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.resumeButton:hover {
+  color: white;
+  background-color: var(--theme-colour);
+  transform: scale(1.05);
 }
 
 /* End hero Section  */
@@ -403,11 +423,133 @@ a {
 /* End Services Section  */
 
 /* Portfolio Section  */
+
+/* ////new/////// */
+/* Portfolio Styles */
+/* Portfolio Styles */
 #portfolio {
+  padding: 50px 0;
+}
+
+.sub-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.portfolio-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.work-card {
+  width: 100%; /* Initially, cards take up full width */
+  margin-bottom: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-5px);
+}
+
+.work {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+  height: 400px; /* Set a fixed height for the image */
+}
+
+.work img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire container */
+  display: block;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.layer a {
+  color: white;
+  font-size: 24px;
+}
+
+.work:hover .layer {
+  opacity: 1;
+}
+
+.card-description {
+  padding: 20px;
+}
+
+.card-description h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 24px;
+  color: #000000;
+}
+
+.card-description p {
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+.card-description ul {
+  padding-left: 20px;
+}
+
+.gitHubLink {
+  color: blue;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .work-card {
+    width: calc(
+      50% - 15px
+    ); /* Two cards per row for tablets and larger screens with margin between */
+  }
+}
+
+@media (min-width: 992px) {
+  .work-card {
+    width: calc(
+      33.33% - 15px
+    ); /* Three cards per row for desktops with margin between */
+  }
+}
+
+/* ////////NEW/////// */
+/* #portfolio {
   padding: 50px 0;
   margin-left: 80px;
   color: black;
   margin-right: 80px;
+}
+
+.projectCardContainer {
 }
 
 .work-list {
@@ -473,36 +615,7 @@ a {
 }
 .work:hover .layer {
   height: 100%;
-}
-
-.btn {
-  display: block;
-  margin: 50px auto;
-  width: fit-content;
-  border: 1px solid var(--theme-colour);
-  padding: 14px 50px;
-  border-radius: 6px;
-  text-decoration: none;
-  color: black;
-  transition: background 0.5s;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background: var(--theme-colour);
-}
-
-.downloadButton {
-}
-
-.gitHubLink {
-  cursor: pointer; /* Change cursor to pointer */
-  transition: color 0.3s ease; /* Add transition effect for color change */
-}
-
-.gitHubLink:hover {
-  color: var(--theme-colour); /* Change text color on hover */
-}
+} */
 
 /* End Portfolio Section  */
 
@@ -586,6 +699,7 @@ form .btn2 {
   font-weight: 300;
   margin-top: 20px;
 }
+
 /* End Contact Section  */
 
 /* Keyframes  */
