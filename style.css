@@ -424,9 +424,6 @@ a {
 
 /* Portfolio Section  */
 
-/* ////new/////// */
-/* Portfolio Styles */
-/* Portfolio Styles */
 #portfolio {
   padding: 50px 0;
 }
@@ -451,7 +448,7 @@ a {
 }
 
 .work-card {
-  width: 100%; /* Initially, cards take up full width */
+  width: 100%; 
   margin-bottom: 30px;
   background-color: #fff;
   border-radius: 8px;
@@ -467,13 +464,13 @@ a {
   position: relative;
   overflow: hidden;
   border-radius: 8px 8px 0 0;
-  height: 400px; /* Set a fixed height for the image */
+  height: 400px; 
 }
 
 .work img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensure the image covers the entire container */
+  object-fit: cover; 
   display: block;
 }
 
@@ -542,81 +539,8 @@ a {
 }
 
 /* ////////NEW/////// */
-/* #portfolio {
-  padding: 50px 0;
-  margin-left: 80px;
-  color: black;
-  margin-right: 80px;
-}
 
-.projectCardContainer {
-}
-
-.work-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 40px;
-  margin-top: 50px;
-  max-width: 800px;
-}
-.work {
-  border-radius: 10px;
-  position: relative;
-  overflow: hidden;
-}
-
-.work img {
-  width: 100%;
-  border-radius: 10px;
-  display: block;
-  transition: transform 0.5s;
-}
-.layer {
-  width: 100%;
-  height: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), var(--theme-colour));
-  border-radius: 10px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  font-size: 12px;
-  transition: height 0.5s;
-  color: #fff;
-}
-
-.layer h3 {
-  font-size: 24px;
-  font-weight: 500;
-  margin-bottom: 20px;
-  color: #fff;
-}
-
-.layer a {
-  margin-top: 20px;
-  color: var(--theme-colour);
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 60px;
-  background: #fff;
-  width: 60px;
-  height: 60px;
-  border-radius: 50px;
-  text-align: center;
-}
-
-.work:hover img {
-  transform: scale(1.1);
-}
-.work:hover .layer {
-  height: 100%;
-} */
-
+/* ////new/////// */
 /* End Portfolio Section  */
 
 /* Contact Section  */
