@@ -324,11 +324,11 @@ a {
   flex-basis: 60%;
 } */
 
-.sub-title {
+/* .sub-title {
   font-size: 60px;
   font-weight: 600;
   color: black;
-}
+} */
 .tab-titles {
   display: flex;
   margin: 20px 0 40px;
@@ -503,7 +503,7 @@ a {
 
 .card-description h2 {
   margin-top: 0;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-size: 24px;
   color: #000000;
 }
