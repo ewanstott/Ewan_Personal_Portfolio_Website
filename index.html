@@ -12,39 +12,36 @@
   </head>
   <body>
     <!-- Header Section  -->
-    <section id="header">
+    <header id="header">
       <div class="header container">
         <div class="nav-bar">
           <div class="brand">
-            <a href="#hero"
-              ><h1><span>E</span>wan <span>S</span>tott</h1></a
-            >
+            <a href="#hero"><h1><span>E</span>wan <span>S</span>tott</h1></a>
           </div>
           <div class="nav-list">
-            <div class="hamburger">
+            <div class="hamburger" aria-label="Toggle navigation menu">
               <div class="bar"></div>
             </div>
             <ul>
-              <li><a href="#hero" data-after="Home">Home</a></li>
-              <li><a href="#portfolio" data-after="Projects">Projects</a></li>
-              <li><a href="#about" data-after="About">About</a></li>
-              <!-- <li><a href="#services" data-after="Services">Services</a></li> -->
-              <li><a href="#contact" data-after="Contact">Contact</a></li>
+              <li><a href="#hero" aria-current="page">Home</a></li>
+              <li><a href="#portfolio">Projects</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
         </div>
-        <!-- <img src="/Images/moon.png" id="icon" /> -->
       </div>
-    </section>
+    </header>
     <!-- End Header Section  -->
+    
     <!-- hero Section -->
     <section id="hero">
       <div class="hero container">
         <div>
-          <h1><span></span>Hello</h1>
-          <h1><span></span>My Name Is</h1>
+          <h1><span></span>Hi, I'm</h1>
           <h1><span></span>Ewan Stott</h1>
-          <a href="#portfolio" type="button" class="cta">Portfolio</a>
+          <h1><span></span>I am a Software Engineer.</h1>
+          <button type="button" class="cta">Portfolio</button>
         </div>
       </div>
     </section>
@@ -67,14 +64,12 @@
             </div>
             <div class="card-description">
               <h2>🧑‍⚕️ Blimp - Health Tech Web App 📈</h2>
-              <!-- <p>
-                <a href="https://www.blimp-health.com" target="_blank"
-                  >Visit Blimp Health</a
-                >
-              </p> -->
+            
               <p>
+                <div class="techCard">
                 Tech: JS, React.js, Redux, Typescript, Express.js, Node,
                 Auth, REST, Validation, MySQL
+                </div>
               </p>
               <p>
                 Project connecting clients with self-employed healthcare
@@ -119,7 +114,11 @@
             </div>
             <div class="card-description">
               <h2>Simpsons Quotes</h2>
-              <p>Tech: React, Hooks, Javascript(ES6+), RESTful, CSS, API</p>
+              <p>
+              <div class="techCard">
+              Tech: React, Hooks, Javascript(ES6+), RESTful, CSS, API
+              </div>
+            </p>
               <p>
                 React project built using Class components and the Simpsons Quotes API to retrieve quotes that the user can then search, sort, favourite and delete.
               </p>
@@ -151,7 +150,11 @@
             </div>
             <div class="card-description">
               <h2>Sunni ☀️</h2>
-              <p>Tech: Vanilla JavaScript, CSS, HTML, GeoLocation, 3rd Party API</p>
+              <p>
+              <div class="techCard">
+              Tech: Vanilla JavaScript, CSS, HTML, GeoLocation, 3rd Party API
+              </div>
+            </p>
               <p>
                 The aim of this project was to develop a web application
                 leveraging APIs and vanilla JavaScript. By integrating the
@@ -185,9 +188,11 @@
             <div class="card-description">
               <h2>Todo App</h2>
               <p>
+              <div class="techCard">
                 Tech: Vanilla JavaScript, CSS, Semantic HTML5 markup, Flexbox,
                 Mobile-first workflow, Responsive
-              </p>
+              </div>
+            </p>
               <p>
                 Todo App is a mobile-friendly web application built using
                 vanilla JavaScript, HTML, and CSS. It provides a straightforward
@@ -223,8 +228,12 @@
               </div>
             </div>
             <div class="card-description">
+              <p>
               <h2>Slack Home Page</h2>
-              <p>Tech: Vanilla CSS, HTML, Mobile-Friendly, Responsive</p>
+              <div class="techCard">
+              Tech: Vanilla CSS, HTML, Mobile-Friendly, Responsive
+              </div>
+            </p>
               <p>Slack home page clone.</p>
               <ul>
                 <li>
@@ -254,7 +263,7 @@
             </div>
             <div class="card-description">
               <h2>Interactive Drum Kit App</h2>
-              <p>Tech: Vanilla JavaScript, CSS, Semantic HTML5 markup</p>
+              <p><div class="techCard">Tech: Vanilla JavaScript, CSS, Semantic HTML5 markup</div></p>
               <p>Interactive drum kit controlled using keyboard.</p>
               <ul>
                 <li>
@@ -275,8 +284,8 @@
     <!-- Portfolio End -->
 
     <!-- About Section  -->
-    <div id="about">
-      <div class="about xxx">
+    
+      <div class="about">
         <h1 class="sub-title">About Me</h1>
         <p>
           Dynamic Full Stack Software Engineer specializing in
@@ -332,17 +341,17 @@
         <div class="tab-contents" id="experience">
           <ul>
             <li>
-              <span
-                >Freelance Full Stack Software Engineer (April
-                2024-Present)</span
-              ><br />
+              
+                Freelance Full Stack Software Engineer, April
+                2024-Present
+              <br />
             </li>
             <li></li>
             <li>
-              <span
-                >Software Development Engineer - Expedia (Jan
-                2024-Present)</span
-              ><br />
+              
+                Software Development Engineer, Expedia, Jan
+                2024-Present
+              <br />
             </li>
             <li></li>
           </ul>
@@ -351,29 +360,29 @@
         <div class="tab-contents" id="education">
           <ul>
             <li>
-              <span>2024</span><br />AWS Associate Certification (currently
-              completing)
+              AWS Associate Certification (currently
+              completing), 2024
             </li>
             <li>
-              <span>2023-2024</span><br />Full Stack Software Engineering
-              Bootcamp - The Jump
+              Full Stack Software Engineering
+              Bootcamp - The Jump, 2023-2024
             </li>
             <li>
-              <span>2023</span><br />MITx 6.00.1x Introduction to Computer
-              Science and Programming
+              MITx 6.00.1x Introduction to Computer
+              Science and Programming, 2023
             </li>
             <li>
-              <span>2023</span><br />CS50: Introduction to Computer Science,
-              Harvard University
+              CS50: Introduction to Computer Science,
+              Harvard University, 2023
             </li>
-            <li><span>2022</span><br />BrainStation Web Development Course</li>
+            <li>BrainStation Web Development Course, 2022</li>
             <li>
-              <span>2015</span><br />Oxford Brookes University - BSc Business
+              Oxford Brookes University - BSc Business, 2015
             </li>
           </ul>
         </div>
       </div>
-    </div>
+    
     <!-- End About Section  -->
     <!-- Services Section -->
     <!-- <div id="services">

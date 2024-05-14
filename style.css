@@ -299,37 +299,38 @@ a {
 
 /* About Section  */
 
-#about {
-  padding: 80px 0;
-  margin-left: 80px;
-  color: rgb(0, 0, 0);
-  margin-right: 80px;
+.about {
+  max-width: 800px;
+  margin: 0 auto 30px; /* Center the section horizontally and add some bottom margin */
+  text-align: center; /* Center the text */
 }
 
-/* .row {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.about-col-1 {
-  flex-basis: 35%;
-}
-
-.about-col-1- img {
-  width: 100%;
-  border-radius: 15px;
-}
-.about-col-2 {
-  flex-basis: 60%;
-} */
-
-/* .sub-title {
-  font-size: 60px;
-  font-weight: 600;
-  color: black;
-} */
 .tab-titles {
+  display: flex;
+  justify-content: center; /* Center the tabs horizontally */
+  margin: 20px 0 40px;
+}
+
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-contents {
+  display: none;
+  text-align: center; /* Align tab content to the left */
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+
+
+/* .tab-titles {
   display: flex;
   margin: 20px 0 40px;
   text-transform: uppercase;
@@ -340,7 +341,7 @@ a {
   font-weight: 500;
   cursor: pointer;
   position: relative;
-}
+} */
 .tab-links::after {
   content: "";
   width: 0;
@@ -517,6 +518,13 @@ a {
   padding-left: 20px;
 }
 
+.techCard {
+  border-radius: 5px;
+  background-color: crimson;
+  padding: 5px;
+}
+
+
 .gitHubLink {
   color: blue;
 }
@@ -544,6 +552,33 @@ a {
 /* End Portfolio Section  */
 
 /* Contact Section  */
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.contact-left {
+  text-align: center;
+}
+.social-icons {
+  margin-top: 20px;
+}
+
+.download {
+  margin-top: 20px;
+}
+
+/* 
 #contact {
   padding: 50px 0;
   margin-left: 80px;
@@ -553,7 +588,6 @@ a {
 .row {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
 }
 
 .contact-left {
@@ -569,7 +603,7 @@ a {
   color: var(--theme-colour);
   margin-right: 15px;
   font-size: 25px;
-}
+} */
 .social-icons {
   margin-top: 30px;
 }
